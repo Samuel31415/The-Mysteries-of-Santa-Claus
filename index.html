@@ -1,1 +1,1135 @@
+<!DOCTYPE html>
+<!--
+                  Contest: Mysteries
+    
+         I have completed 100% of Khan Academy's 
+        'Intro to HTML' and have been programming 
+                    for 8-9 months.
+    
+          I would prefer to be placed in the
+              [Intermediate]
+                   bracket
+    
+    WARNING: TO BE ABLE TO ACCESS, SET SCREEN HEIGHT TO 600PX
+    
+    Credits:
+        
+        
+        
+        Inspiriation from @21262 for the button animations
+        
+        I learned about the website fading in from @William.Wang2023 or something, and used the code he taught me to make the website fade in when the pages switched.
+        
+        w3schools.com taught me how to do the button animations
+        
+        I learned about how to change the angle of something from Devloper.Mozilla.org
+        
+        Lots of stuff learned from w3schools
+        
+        I made the rest yay
+                       
+    
+    TODO:
+     - Fill that out ^^
+     - Save your entry as a spin-off of this program
+     - Have fun! yayayayayayayayayayaqy
+     
+     Note:
+     The website border may look different.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Mystery of Santa Claus</title>
+        <style>
+            button{
+                cursor: pointer;
+            }
+            body{
+                font-family: cursive;
+            }
+            .button{
+                position: absolute;
+                font-family: cursive;
+                border-width: 12px;
+                background-color: rgb(217, 63, 63);
+                border-color: rgb(0, 255, 9);
+                color: rgb(255, 255, 255);
+                width: 143px;
+                height: 74px;
+                border-radius: 18px;
+            }
+            #beginningPage{
+                position: absolute;
+                z-index: 12345;
+                background-color: rgb(255, 0, 0);
+                color: rgb(255, 255, 255);
+                font-family: cursive;
+                font-size: 27px;
+                width: 565px;
+                height: 2101px;
+                margin-top: 1px;
+            }
+            #beginningH{
+                margin-left: 76px;
+            }
+            #santaP{
+                margin-left: 39px;
+                font-size: 58px;
+                color: rgb(0, 255, 0);
+            }
+            #clausP{
+                font-size: 58px;
+                color: rgb(255, 0, 0);
+            }
+            #welcomeP{
+                margin-left: 165px;
+                width: 248px;
+                font-size: 17px;
+            }
+            #beginSanta{
+                z-index: 4352345234523452345234523455;
+                margin-left: 23px;
+                padding: 5px;
+                width: 200px;
+                font-size: 34px;
+                border-width: 12px;
+                border-radius: 12px;
+                border-color: rgb(255, 255, 255);
+                background-color: rgb(4, 255, 0);
+                color: rgb(255, 0, 0);
+                font-weight: bold;
+                font-family: cursive;
+                margin-left: 176px;
+                margin-top: 150px;
+                
+            }
+            #beginSanta:hover{
+                color: rgb(255, 102, 102);
+                transition: 0.5s;
+                border-width: 22px;
+            }
+            #reset{
+                z-index: 1000000000;
+                position: absolute;
+                padding: 4px;
+                background-color: rgb(255, 0, 0);
+                color: rgb(255, 255, 255);
+                border-color: rgb(255, 255, 255);
+                border-width: 6px;
+                border-radius: 6px;
+                font-family: cursive;
+                margin-top: 84px;
+                z-index: 12334;
+                margin-left: 12px;
+                
+            }
+            .button {cursor: pointer;}
+            body{
+                margin: 0px;
+                background-color: rgb(193, 255, 171);
+            }
+            #discover{
+                margin-left: 142px;
+            }
+            .gamePage{
+                animation: fadeIn 0.5s ease-out;
+            }
+            #game{
+                margin-left: 284px;
+            }
+            #bar{
+                background-color: rgb(255, 255, 255);
+                width: 554px;
+                height: 105px;
+                position: absolute;
+                z-index: -3;
+                margin-top: -31px;
+            }
+            #title{
+                position: absolute;
+                font-family: cursive;
+                margin: 120px;
+            }
+            #bodyR{
+                position: absolute;
+                font-family: cursive;
+                margin: 120px;
+                margin-top: 232px;
+                
+            }
+            body{
+                height: 2100px;
+                border: solid;
+                border-width: 9px;
+                border-color: rgb(252, 0, 0);
+                border-style: dashed;
+            }
+            #diagram{
+                background-color: rgb(235, 235, 235);
+                margin: 23px;
+            }
+            #pole{
+                width: 17px;
+                height: 49px;
+                background-color: rgb(232, 151, 0);
+                position: absolute;
+                z-index: 4;
+                margin-top: -76px;
+                margin-left: 165px;
+            }
+            #balance{
+                width: 120px;
+                height: 11px;
+                margin-left: 115px;
+                margin-top: -89px;
+                position: absolute;
+                background-color: rgb(232, 151, 0);
+                border-width: 1px;
+                border-color: rgb(0, 0, 0);
+                border-style: solid;
+            }
+            #shape{
+                width: 20px;
+                height: 20px;
+                background-color: rgb(255, 0, 0);
+                position: absolute;
+                z-index: 4;
+                margin-top: -109px;
+                margin-left: 130px;
+            }
+            #solidCandy{
+                position: absolute;
+                margin: 0px;
+                height: 2119px;
+                border-style: solid;
+                border-width: 9px;
+                border-color: rgb(255, 255, 255);
+                border-style: solid;
+                margin-left: -9px;
+                margin-top: -28px;
+                width: 581px;
+                z-index: -4;
+            }
+            #shape2{
+                width: 20px;
+                height: 20px;
+                background-color: rgb(21, 255, 21);
+                position: absolute;
+                z-index: 4;
+                margin-top: -109px;
+                margin-left: 160px;
+                border-radius: 23px;
+            }
+            #shape3{
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-color: rgb(30,30,255);
+                border-radius: 30%;
+                margin-left: 210px;
+                margin-top: -109px;
+            }
+            #Winston{
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 474px;
+            }
+            #canvas{
+                background-color: rgb(179, 116, 53);
+                position: absolute;
+                margin-left: 51px;
+                margin-top: 201px;
+                cursor: crosshair;
+            }
+            .upgrade{
+                font-weight: bold;
+                cursor: pointer;
+                position: absolute;
+                margin-left: 450px;
+                width: 103px;
+                border-width: 6px;
+                border-radius: 7px;
+                height: 69px;
+                border-color: rgb(255, 255, 255);
+                background-color: rgb(41, 186, 28);
+                color: rgb(186, 0, 0);
+                font-size: 9px;
+                font-family: cursive;
+            }
+            .upgradeTitle{
+                font-size: 14px;
+            }
+            #upgrade1{
+                margin-top: 280px;
+            }
+            #elfImage{
+                position: absolute;
+                margin-top: 210px;
+                margin-left: 478px;
+                width: 50px;
+            }
+            #reindeerImage{
+                margin-left: 478px;
+                width: 50px;
+                margin-top: 395px;
+                
+            }
+            .upgradeImage{
+                position: absolute;
+            }
+            #upgrade2{
+                margin-top: 472px;
+            }
+            .snowball{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background-color: rgb(255, 255, 255);
+                border-radius: 100%;
+            }
+            #snowI{
+                margin-left: 68px;
+                margin-top: 551px;
+            }
+            #dough{
+                width: 40px;
+                height: 40px;
+                background-color: rgb(181, 118, 0);
+                position: absolute;
+                margin-top: 545px;
+                margin-left: 158px;
+                border-radius: 12px;
+            }
+            #beginSanta{
+                z-index: 2345631223;
+            }
+            #spike1{
+                z-index: 0;
+                position: fixed;
+                width: 100px;
+                height: 100px;
+                background-color: rgb(255, 0, 0);
+                transform: rotate(-27deg); 
+                margin-top: 32px;
+                margin-left: 18px;
+            }
+            #spike2{
+                z-index: 0;
+                position: fixed;
+                width: 100px;
+                height: 73px;
+                background-color: rgb(255, 0, 0);
+                transform: rotate(-46deg); 
+                margin-top: 39px;
+                margin-left: 101px;
+            }
+            #spike3{
+                z-index: 0;
+                position: fixed;
+                width: 144px;
+                height: 68px;
+                background-color: rgb(255, 0, 0);
+                transform: rotate(-15deg); 
+                margin-top: 39px;
+                margin-left: 221px;
+            }
+            #spike4{
+                z-index: 0;
+                position: fixed;
+                width: 100px;
+                height: 73px;
+                background-color: rgb(255, 0, 0);
+                transform: rotate(-136deg); 
+                margin-top: 45px;
+                margin-left: 363px;
+            }
+            #spike5{
+                z-index: 0;
+                position: fixed;
+                width: 131px;
+                height: 73px;
+                background-color: rgb(255, 0, 0);
+                transform: rotate(-20deg); 
+                margin-top: 39px;
+                margin-left: 425px;
+            }
+            #beginSanta{
+                z-index: 2345631223;
+                position: fixed;
+            }
+            #hopper{
+                position: absolute;
+                width: 40px;
+                margin-top: 547px;
+                margin-left: 253px;
+            }
+            #wood{
+                position: absolute;
+                width: 6px;
+                height: 45px;
+                background-color: rgb(120, 92, 15);
+                margin-top: 540px;
+                margin-left: 349px;
+            }
+            #hopperImage{
+                position: absolute;
+                z-index: -1;
+            }
+            #decorations{
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                background-color: rgb(255, 0, 255);
+            }
+            #decorations2{
+                position: absolute;
+                width: 30px;
+                height: 20px;
+                background-color: rgb(0, 145, 255);
+            }
+            #decorations3{
+                position: absolute;
+                width: 30px;
+                height: 10px;
+                background-color: rgb(0, 255, 0);
+            }
+            #decorationsAll{
+                margin-top: 553px;
+                position: absolute;
+                margin-left: 413px;
+            }
+            #doughButton{
+                margin-top: 589px;
+                margin-left: 129px;
+                width: 100px;
+            }
+            #snowButton{
+                margin-top: 589px;
+                width: 100px;
+                margin-left: 29px;
+            }
+            #hopperButton{
+                margin-top: 589px;
+                margin-left: 229px;
+                width: 95px;
+            }
+            #stickButton{
+                margin-top: 589px;
+                width: 64px;
+                margin-left: 324px;
+            }
+            #decorButton{
+                margin-top: 589px;
+                width: 100px;
+                margin-left: 388px;
+            }
+            #howToPlay{
+                position: absolute;
+                width: 395px;
+               margin-left: 88px;
+               margin-top: 726px;
+            }
+            .addIngredient{
+                position: absolute;
+                width: 95px;
+                height: 63px;
+                font-family: cursive;
+                border-width: 5px;
+                font-size: 10px;
+                border-color: rgb(255, 0, 0);
+                border-radius: 5px;
+                background-color: rgb(169, 255, 168);
+                color: rgb(117, 2, 117);
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .ingredients{
+                position: absolute;
+                width: 119px;
+                font-size: 10px;
+                background-color: rgb(217, 63, 63);
+                border-color: rgb(0, 255, 9);
+                color: rgb(255, 255, 255);
+                border-width: 5px;
+                border-radius: 12px;
+                height: 71px;
+                color: rgb(255, 238, 0);
+                cursor: pointer;
+            }
+            hr{
+                border-color: rgb(255, 0, 0);
+                background-color: rgb(255, 0, 0);
+            }
+            #heading{
+                animation: fadeIn 0.5s ease-out;
+            }
+            #gingerbread{
+                position: fixed;
+                margin-left: -376px;
+                width: 565px;
+                margin-top: -316px;
+                z-index: -1;
+                margin-left: 0px;
+            }
+            #capBox{
+                font-weight: bold;
+                position: absolute;
+                margin-top: 210px;
+                margin-left: 148px;
+                width: 179px;
+                height: 44px;
+                border-radius: 10px;
+                border-width: 6px;
+                cursor: pointer;
+                border-color: rgb(255, 255, 255);
+                background-color: rgb(242, 61, 61);
+                color: rgb(0, 247, 8);
+                font-family: cursive;
+                font-size: 16px;
+                padding: 5px;
+            }
+            .upgradesPs{
+                position: absolute;
+                background-color: rgb(255, 255, 255);
+                padding: 3px;
+                font-family: cursive;
+                font-size: 12px;
+                border-width: 8px;
+                border-style: solid;
+                border-color: rgb(255, 0, 0);
+                border-radius: 6px;
+                color: rgb(125, 110, 255);
+                font-weight: bold;
+                margin-left: 460px;
+            }
+            #elvesP{
+                margin-top: 165px;
+            }
+            #reindeerP{
+                margin-top: 352px;
+            }
+            #score{
+                position: absolute;
+                font-family: Apple Chancery, URW Chancery L, cursive;
+                margin-top: 180px;
+                margin-left: 86px;
+            }
+            #coins{
+                position: absolute;
+                font-family: Apple Chancery, URW Chancery L, cursive;
+                margin-top: 180px;
+                margin-left: 276px;
+            }
+            #coinsEarned{
+                color: rgb(255, 0, 0);
+            }
+            #presentsMade{
+                color: rgb(0, 181, 18);
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
 
+                to {
+                    opacity: 1;
+                }
+            }
+            body{
+                animation: fadeIn 0.5s ease-out;
+            }
+            #homeScreen{
+                animation: fadeIn 0.5s ease-out;
+            }
+            #discoverScreen{
+                animation: fadeIn 0.5s ease-out;
+            }
+            #addSnowball{
+                margin-top: 268px;
+                margin-left: 326px;
+            }
+            #addDough{
+                margin-left: 326px;
+                margin-top: 331px;
+            }
+            #addHopper{
+                margin-left: 326px;
+                margin-top: 394px;
+            }
+            #addStick{
+                margin-left: 252px;
+                margin-top: 462px;
+            }
+            #addDecoration{
+                margin-top: 462px;
+                margin-left: 138px;
+            }
+            #discoverScreen2{
+                animation: fadeIn 0.5s ease-out;
+            }
+            #gameScreenThing{
+                animation: fadeIn 0.5s ease-out;
+            }
+            .button:hover{
+            background-color: rgb(255, 148, 148);
+                transition: 1s;
+            }
+            .shine{
+                transform: rotate(24deg); 
+                z-index: 10;
+                width: 10px;
+                height: 121px;
+                position: absolute;
+                background-color: rgb(193, 255, 171);
+                opacity: 0.6;
+
+                margin-top: -129px;
+                margin-left: -44px;
+                animation-name: gleamFunc;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }
+            @keyframes gleamFunc{
+                0% {margin-left: -44px;}
+                100% {margin-left: 315px;}
+            }
+            #gameShine{
+                transform: rotate(24deg); 
+                z-index: 0;
+                width: 10px;
+                height: 95px;
+                position: absolute;
+                background-color: rgb(193, 255, 171);
+                opacity: 0.7;
+
+                margin-top: -125px;
+                margin-left: -54px;
+                animation-name: gleamFuncG;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }
+            
+            @keyframes gleamFuncG{
+                0% {margin-left: -54px;}
+                100% {margin-left: 315px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Beginning page code-->
+        <div id="beginning"><div id="beginningPage"><h1 id="beginningH">The Mystery of <br><span id="santaP">Santa</span> <span id="clausP">Claus</span></h1><p id="welcomeP">Welcome to <em>The Mystery of Santa Claus</em>! Click begin to begin.</p><div id="spike1"></div><div id="spike2"></div><div id="spike3"></div><div id="spike4"></div><div id="spike5"></div><button id="beginSanta">Begin</button><img id="gingerbread" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/gingerbread-houses.png"></div></div>
+        
+        <!--Navigation Buttons-->
+        <div id="bar"></div>
+        <button id="home" class="button"><strong>Home</strong></button>
+        <button id="discover" class="button"><strong>Discover who Santa is</strong></button>
+        <button id="game" class="button"><strong>Santa's Workshop</strong></button>
+        
+        
+        <!--Title-->
+        <h1 id="title"><span id="heading"></span></h1>
+        
+        <!--Button in Santa's Workshop-->
+        <div id="capBoxDiv"></div>
+        
+        <!--Winston-->
+        <div id="image"><img id= "Winston"src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/father-winston.png" width="61px" alt="Father Winston" value="hi"></div>
+        
+        
+        <!--Body Text-->
+        <p id="bodyR"><span id="bodyText"></span><span id="secondP"></span></p>
+        
+        <!--Santa's workshop canvas-->
+        <div id="gameScreen"></div>
+        
+        <!--Santa's workshop ingredients-->
+        <div id="ingredients"></div>
+        
+        <!--Santa's workshop upgrades-->
+        <div id="upgrades"></div>
+        
+        <!-- Outer-frame border, to make the border look like a candy cane-->
+        <div id="solidCandy"></div>
+        
+        <script>
+            //Get the first page's button & first page
+            var page1=document.getElementById("beginning");
+            var buttonBegin=document.getElementById("beginSanta")
+            //First page button function
+            var webBegin=function(){
+                page1.innerHTML="";
+                toHome();
+            }
+            //First page button event listener
+            buttonBegin.addEventListener("click", webBegin);
+            
+            //Get the white outer border, for resizing
+                document.getElementById("solidCandy").style.width=window.innerWidth-35+"px";
+                
+                //Get white bar on top, for resizing
+                document.getElementById("bar").style.width=window.innerWidth-26+"px";
+            
+            
+            //Page Variables
+            var heading=document.getElementById("heading");
+            var text=document.getElementById("bodyText");
+            var gameScreen=document.getElementById("gameScreen");
+            var ingredients=document.getElementById("ingredients");
+            var upgrades=document.getElementById("upgrades");
+            
+            //Home Button
+            var homeButton=document.getElementById("home");
+            
+            //Home Button Function
+            var toHome=function(){
+                heading.textContent="Home- The Mystery of Santa Claus";
+                text.innerHTML=("<div class=shine></div><div id=homeScreen><hr>Welcome to <em>The Mystery of Santa Claus</em>! This is a website where you will be able to find out who Santa is, and have a Santa game to play while waiting for Christmas! <br>Use the buttons above to navigate through the pages of this website. Press home to return to this page. Please enjoy!<br><br>-Origami99<br>(ps: I'm totally not just doing this to fill up some space) Plz plz plz let me win this contest :P</div>");
+                secondP.innerHTML="";
+                
+                //Clear Game Screen
+                gameScreen.innerHTML="";
+                ingredients.innerHTML="";
+                upgrades.innerHTML="";
+            };
+            
+            //Home Button Event Listener
+            homeButton.addEventListener("click", toHome)
+            
+            //Switch tab to home first
+            toHome();
+            
+            //Discover button
+            var discoverButton=document.getElementById("discover")
+            
+            //Discover Button Function
+            var toDiscover=function(){
+                heading.textContent="Discover Who Santa Is";
+                text.innerHTML=("<div class=shine></div><div id=discoverScreen><hr>Welcome to the <em>Discover Who Santa Is</em> page! Before you start reading, please read this disclaimer. <br><br>Disclaimer: Reading this might ruin your Christmas. How? Well, if you find out who Santa is, and he/she turns out to just be your parents, your Christmas spirit might be ruined, and Christmas will be no more fun. Also, you might get mad at me. <strong>IF ANYONE KEEPS READING, IT IS NOT MY PROBLEM ANYMORE, AND I CLAIM NO RESPONSIBILITY</strong> (you could just read it, and not do what it says, tho....)<br><hr><br><br><br><br><br><br><br><br><br><br><hr>So, I'm assuming that you're okay with you ruining your own Christmas by discovering who Santa is. Well, whatever. Basically, to find out who Santa is, we can just find out who he isn't. Think about the possibilities. Santa can either be:<br>>Your parents<br>>An actual spirit thing<br><br> (Not GOD, I asked Santa something, and he said he didn't have the power to do it).<br>So, basically, we just need to eliminate one of these options, to discover who Santa is. Who to eliminate? Finding out whether Santa is some weird spirit thing is too hard, so let's stick with finding out whether or not your parents are Santa. To find this out, all we need to find out is whether or not your parents left their room at night, on Christmas Eve. To find out, you can use something like the diagram below. <br><hr><canvas width: 100px id=diagram><br></div>")
+                
+                //Second Paragraph
+                var secondP=document.getElementById("secondP")
+                secondP.innerHTML="<div id=discoverScreen2><div id=pole></div><div id=balance></div><div id=shape></div><div id=shape2></div><div id=shape3></div><hr>Basically, you set up a pole outside the door to your parents' room. Put something on top, and put some random objects on that thing. The more, the better. Make sure that if the door opens, the shapes will all fall on the ground, along with the pole and thing on top. In the morning, if you find it sprawled all over the place, or the objects out of order, you'll know who Santa is. Be sure to warn your parents, so they can't come up with an excuse like 'I went to the bathroom' or something like that. By doing this, you can eliminate an option, and if it turns out not to be your parents, then you'll know exactly who Santa is. <br>(Be sure to remember the order of the shapes, or write it down somewhere secret.)<hr><br> <br> The End</div>";
+                
+                //Clear Game Screen
+                gameScreen.innerHTML="";
+                ingredients.innerHTML="";
+                upgrades.innerHTML="";
+            };
+            
+            
+            //Discover Button Event Listner
+            discoverButton.addEventListener("click", toDiscover);
+            
+            
+            //Santa's Workshop
+            
+            //Making present?
+            var makingPresent=false;
+            
+            //Coins
+            var coins=15;
+            
+            //Ingredients on work table
+            var workTable=[];
+            
+            //Presents
+            var presentsMade=0;
+            
+            //Elves bought
+            var elves=0;
+            
+            //Reindeer bought
+            var reindeer=0;
+            
+            //Snowballs bought
+            var snowballs=0;
+            
+            //Dough bought
+            var dough=0;
+            
+            //Hoppers bought
+            var hoppers=0;
+            
+            //Sticks bought
+            var sticks=0;
+            
+            //Decorations bought
+            var decorations=0;
+            
+            //Get game button
+            var gameButton=document.getElementById("game");
+            
+            //Present cap xPosition
+            var capX=-174;
+            
+            //Game button function
+            var toGame=function(){
+                heading.innerHTML="Santa's Workshop<hr><div id=gameShine></div>"
+                secondP.innerHTML="";
+                text.innerHTML="";
+                gameScreen.innerHTML=("<div class=gamePage><canvas id=canvas width= 376px height=331px></div>");
+                upgrades.innerHTML=("<div class=gamePage><button id=reset>Restart game</button><div id=gameScreenThing><img class=upgradeImage id=elfImage src=https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/hopper-elfer.png><button class=upgrade id=upgrade1><span class=upgradeTitle>Elf</span><br>cost: 20</button><img class=upgradeImage id=reindeerImage alt=hopper reindeer width=120px src=https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/seasonal/hopper-reindeer.png><button class=upgrade id=upgrade2><span class=upgradeTitle>Reindeer</span><br>Cost: 30</button><div class=snowball id=snowI></div><div id=dough></div><img src=https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/creatures/Hopper-Happy.png alt=hopper id=hopper><div id=wood></div><div id=decorationsAll><div id=decorations></div><div id=decorations2></div><div id=decorations3></div></div><button id=snowButton class=ingredients><span class=upgradeTitle>Snowball</span><br>Price: 10</button><button class=ingredients id=doughButton><span class=upgradeTitle>Dough</span><br>Price: 10</button><button id=hopperButton class=ingredients><span class=upgradeTitle>Hopper<br></span>Cost: 15</button><button class=ingredients id=stickButton><span class=upgradeTitle>Stick</span><br>Cost: 5</button><button id=decorButton class=ingredients><span class=upgradeTitle>Decorations</span><br>Price: 12</button><button class=addIngredient id=addSnowball>Add snowball<br>Owned: <span id=snowballsOwned>0</span></button><button class=addIngredient id=addDough>Add dough<br>Owned: <span id=doughOwned>0</span></button><button class=addIngredient id=addHopper>Add Hopper<br>Owned: <span id=hoppersOwned>0</span></button><button class=addIngredient id=addStick>Add stick<br>Owned: <span id=sticksOwned>0</span></button><button class=addIngredient id=addDecoration>Add decorations<br>Owned: <span id=decorationsOwned>0</span></button><button id=capBox>Make Present!</button><p id=score>Presents made: <span id=presentsMade>0</span></p><p id=coins>Coins: <span id=coinsEarned>0</span></p></div><p class=upgradesPs id=elvesP>Owned: <span id=numElves>0</span></p><p class=upgradesPs id=reindeerP>Owned: <span id=numReindeer>0</span></p><div id=howToPlay><p>This is a game where you simulate Santa Claus! Buy ingredients, add them to the work table, and press 'Make Present' to make it! Earn different coins for different gifts you make, and buy upgrades like Elves and Reindeer to earn more coins!<br><hr><br><br><br><br><br><br><br><hr>Recipes:<br>1. Snow Noes- 1 Snowball, 1 Stick.<br>2. Gingerbread man- 1 Dough, 1 Decoration.<br>3. Hopper-reindeer- 1 Hopper, 1 Stick.<br>4. Hopper-partying- 1 Hopper, 1 Decoration<hr><br><br><br><br><br><br><br><br><br><br><hr>Thanks for reading! Hope you enjoy!</p></div></div>")
+                var capBox=document.getElementById("capBoxDiv");
+                
+                //Get presents made <p>
+                var presentsMadeP=document.getElementById("presentsMade");
+                
+                
+                //Counter for the capping present, to wait
+                var counter=0;
+                
+                //Direction the present cap is going for the present cap
+                var goingForward=true;
+                
+                //Can  you cap the present currently?
+                var canCap=true;
+                
+                //Get restart button
+                var restart=document.getElementById("reset");
+                
+                //Restart button function
+                var restartGame=function(){
+                    coins=15;
+                    elves=0;
+                    reindeer=0;
+                    snowballs=0;
+                    dough=0;
+                    hoppers=0;
+                    sticks=0;
+                    decorations=0;
+                    presentsMade=0;
+                    checkForUpdates();
+                    workTable=[];
+                    drawPresentBox();
+                    toGame();
+                }
+                
+                //Restart game event listener
+                restart.addEventListener("click", restartGame)
+                
+                //Get Coins
+                var coinsP=document.getElementById("coinsEarned")
+                
+                //Get ingredient numbers
+                var snowballsP=document.getElementById("snowballsOwned")
+                var doughP=document.getElementById("doughOwned");
+                var hopperP=document.getElementById("hoppersOwned");
+                var stickP=document.getElementById("sticksOwned");
+                var decorationP=document.getElementById("decorationsOwned");
+                
+                //Get the number of upgrades
+                var numElves=document.getElementById("numElves");
+                var numReindeer=document.getElementById("numReindeer");
+                
+                //Function to set coins and presents to the current value
+                
+                var checkForUpdates=function(){
+                    presentsMadeP.innerHTML=presentsMade;
+                    coinsP.innerHTML=Math.round(coins);
+                    snowballsP.innerHTML=snowballs;
+                    doughP.innerHTML=dough;
+                    hopperP.innerHTML=hoppers;
+                    stickP.innerHTML=sticks;
+                    decorationP.innerHTML=decorations;
+                    numElves.innerHTML=elves;
+                    numReindeer.innerHTML=reindeer;
+                };
+                checkForUpdates();
+                //Get buy elves button
+            var buyElves=document.getElementById("upgrade1");
+            
+            //Get buy reindeer button
+            var buyReindeer=document.getElementById("upgrade2");
+            
+            //Buy elf function
+            var buyElfFunction=function(){
+                if (coins>=20){
+                    elves+=1;
+                    coins-=20;
+                    checkForUpdates();
+                }
+            }
+            
+            //Buy reindeer function
+            var buyReindeerFunction=function(){
+                if (coins>=30){
+                    reindeer+=1;
+                    coins-=30
+                    checkForUpdates();
+                }
+            };
+            buyElves.addEventListener("click", buyElfFunction)
+            buyReindeer.addEventListener("click", buyReindeerFunction)
+            
+            //Get upgrades
+            var buySnowballs=document.getElementById("snowButton");
+            var buyDoughs=document.getElementById("doughButton");
+            var buyHoppers=document.getElementById("hopperButton");
+            var buySticks=document.getElementById("stickButton");
+            var buyDecorations=document.getElementById("decorButton");
+            
+            //Upgrade functions
+            var buySnowball=function(){
+                if (coins>=10){
+                    snowballs+=1;
+                    coins-=10;
+                    checkForUpdates();
+                }
+            };
+            var buyDough=function(){
+                if (coins>=10){
+                    dough+=1;
+                    coins-=10;
+                    checkForUpdates();
+                }
+            }
+            var buyHopper=function(){
+                if (coins>=15){
+                    hoppers+=1;
+                    coins-=15;
+                    checkForUpdates();
+                }
+            }
+            var buyStick=function(){
+                if (coins>=5){
+                    sticks+=1;
+                    coins-=5;
+                    checkForUpdates();
+                }
+            }
+            var buyDecoration=function(){
+                if (coins>=12){
+                    decorations+=1;
+                    coins-=12;
+                    checkForUpdates();
+                }
+            }
+            
+            //Upgraders event listeners
+            buySnowballs.addEventListener("click", buySnowball);
+            buyDoughs.addEventListener("click", buyDough);
+            buyHoppers.addEventListener("click", buyHopper);
+            buySticks.addEventListener("click", buyStick);
+            buyDecorations.addEventListener("click", buyDecoration);
+            //Upgrades code
+            var elvesinterval=window.setInterval(function(){
+                coins+=elves;
+                checkForUpdates();
+            }, 2000-elves*50)
+            var reindeerinterval=window.setInterval(function(){
+                coins+=(coins/10*reindeer);
+            }, 1000)
+            //Canvas code
+            var canvas=document.getElementById("canvas");
+            var ctx=canvas.getContext("2d");
+            ctx.translate(canvas.x, canvas.y);
+            
+            //Draw four circles on the canvas corners
+            ctx.beginPath();
+            ctx.arc(41, 39, 25, 0, 2 * Math.PI);
+            ctx.arc(333, 39, 25, 0, 2 * Math.PI);
+            ctx.fillStyle="	rgb(139,69,19)"
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(41, 292, 25, 0, 2 * Math.PI);
+            ctx.arc(333, 292, 25, 0, 2 * Math.PI);
+            ctx.fillStyle="	rgb(139,69,19)"
+            ctx.fill();
+                
+            //Code for drawing the present box
+            var drawPresentBox=function(){
+                ctx.fillStyle="lightgreen"
+                ctx.fillRect(129,104,120,120)
+                ctx.fillStyle="red"
+                ctx.fillRect(129,155,120,20)
+                ctx.fillRect(179,104,20,120)
+                ctx.fillStyle="darkgreen";
+                ctx.fillRect(139,114,100,100)
+            }
+            
+            //Make the canvas start off with a present box
+            drawPresentBox();
+            
+            //Draw ingredient functions
+            var drawSnowball=function(){
+                var snowballX=Math.random()*59+163;
+                var snowballY=Math.random()*72+126;
+                ctx.beginPath();
+                ctx.arc(snowballX, snowballY, 14, 0, 2 * Math.PI);
+                ctx.fillStyle="	rgb(255, 255, 255)"
+                ctx.fill();
+            }
+            var drawDough=function(){
+                var doughX=Math.random()*40+163;
+                var doughY=Math.random()*54+126;
+                ctx.fillStyle="rgb(148, 95, 35)"
+                ctx.fillRect(doughX, doughY, 30, 30);
+            }
+            var drawStick=function(){
+                var stickX=Math.random()*40+163;
+                var stickY=Math.random()*54+126;
+                ctx.fillStyle="rgb(87, 49, 9)"
+                ctx.fillRect(stickX, stickY, 6, 30);
+            }
+            var drawDecoration=function(){
+                var decorationX=Math.random()*40+163;
+                var decorationY=Math.random()*54+126;
+                ctx.fillStyle="rgb(255, 0, 242)"
+                ctx.fillRect(decorationX, decorationY, 30, 30);
+                ctx.fillStyle="rgb(0, 77, 255)"
+                ctx.fillRect(decorationX, decorationY, 30, 20);
+                ctx.fillStyle="rgb(0, 255, 4)"
+                ctx.fillRect(decorationX, decorationY, 30, 10);
+            }
+            var drawHopper=function(){
+                var hopperX=Math.random()*40+176;
+                var hopperY=Math.random()*24+140;
+                ctx.beginPath();
+                ctx.arc(hopperX, hopperY, 17, 0, 2 * Math.PI);
+                ctx.fillStyle="	rgb(255, 238, 0)"
+                ctx.fill();
+            }
+            //Get "add ingredients"
+            var addSnowball=document.getElementById("addSnowball");
+            var addDough=document.getElementById("addDough");
+            var addHopper=document.getElementById("addHopper");
+            var addStick=document.getElementById("addStick");
+            var addDecoration=document.getElementById("addDecoration")
+            
+            //Add ingredients functions
+            
+            var addSnowballToWorktable=function(){
+                if (snowballs>=1&&canCap===true){
+                    workTable.push("s");
+                    snowballs-=1;
+                    checkForUpdates();
+                    ctx.beginPath();
+                    drawSnowball();
+                }
+            }
+            var addDoughToWorktable=function(){
+                if (dough>=1&&canCap===true){
+                    workTable.push("d");
+                    dough-=1;
+                    checkForUpdates();
+                    drawDough();
+                }
+            }
+            var addHopperToWorktable=function(){
+                if (hoppers>=1&&canCap===true){
+                    workTable.push("h");
+                    hoppers-=1;
+                    checkForUpdates();
+                    drawHopper();
+                }
+            }
+            var addStickToWorktable=function(){
+                if (sticks>=1&&canCap===true){
+                    workTable.push("st");
+                    sticks-=1;
+                    checkForUpdates();
+                    drawStick();
+                }
+            }
+            var addDecorationToWorktable=function(){
+                if (decorations>=1&&canCap===true){
+                    workTable.push("de");
+                    decorations-=1;
+                    checkForUpdates();
+                    drawDecoration();
+                }
+            }
+            
+            //Ingredients event listeners
+            addSnowball.addEventListener("click", addSnowballToWorktable)
+            addDough.addEventListener("click", addDoughToWorktable);
+            addHopper.addEventListener("click", addHopperToWorktable);
+            addStick.addEventListener("click", addStickToWorktable);
+            addDecoration.addEventListener("click", addDecorationToWorktable)
+
+            //Function for making the presents
+            var makePresentFunc=function(){
+                if (workTable.includes("s", 0)&&workTable.includes("st", 0)){
+                    presentsMade+=1;
+                    coins+=17
+                }
+                if (workTable.includes("d", 0)&&workTable.includes("de")){
+                    presentsMade+=1;
+                    coins+=24;
+                }
+                if (workTable.includes("h")&&workTable.includes("st")){
+                    presentsMade+=1;
+                    coins+=24;
+                }
+                if (workTable.includes("h")&&workTable.includes("de")){
+                    presentsMade+=1;
+                    coins+=30;
+                }
+                if (workTable.includes("sa")){
+                    presentsMade+=1;
+                    coins+=100;
+                }
+                workTable=[];
+                checkForUpdates();
+            }
+            
+            
+            //Draw the present box cap
+            var drawCap=function(x, y){
+                ctx.fillStyle="lightgreen";
+                ctx.fillRect(x,y,130,130);
+                ctx.fillStyle="red";
+                ctx.fillRect(x+0, y+56, 130, 20);
+                
+                ctx.fillRect(x+56, y+0, 20, 130);
+            }
+            
+            
+            //Simple function to call the move cap function.
+            var capPresent=function(){
+                    if (canCap==true){
+                        counter=0;
+                        capX=-147;
+                        var capAnimation=window.setInterval(function(){
+                        canCap=false;
+                        if (capX<=122&&goingForward===true){
+                            ctx.clearRect(capX, 99, 130,130)
+                            capX+=2;
+                            drawCap(capX, 99);
+                        }else{
+                            goingForward=false;
+                            counter+=1;
+                            if (counter>=100&&capX>=-147){
+                                ctx.clearRect(capX, 99, 130,130);
+                                capX-=2;
+                                makePresentFunc();
+                                
+                                drawPresentBox();
+                                
+                                
+                                drawCap(capX, 99);
+                            }
+                            if (capX<=-147){
+                                capX=-147;
+                                canCap=true;
+                                goingForward=true;
+                                window.clearInterval(capAnimation);
+                            }
+                        }
+                        }, 10);
+                    }
+                    
+            };
+            
+            //Get the "Make Present!" button
+            var makePresentButton=document.getElementById("capBox");
+            //Make Present Button event listener
+            makePresentButton.addEventListener("click", capPresent)
+            }
+            //Game button event listener
+            gameButton.addEventListener("click",toGame);
+            
+        </script>
+    </body>
+</html>
